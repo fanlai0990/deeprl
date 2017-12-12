@@ -43,15 +43,5 @@ def generator(file, new_file):
 		print 'finish...'
 
 
-'''path = "/Users/laifan/documents/github/gaia/src/main/java/gaiasim/scheduler/drlscheduler/new_drl/gml" 
-files= os.listdir(path) 
-print files
-s = []  
-for file in files:
-     if not os.path.isdir(file):
-          f = path+"/"+file
-          if '.gml' in f:
-         	 generator(f, f.replace('gml','txt'))
-'''
 generator('./gml/gb4.gml', './gml/gb4.txt')
 print 'finish all'
