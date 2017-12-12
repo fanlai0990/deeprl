@@ -430,8 +430,7 @@ class NetEnv(object):
 				print 'interval:\t', past_interval
 				print 'last time:\t', self.LAST_TIME
 				print 'current time:\t', self.CURRENT_TIME
-				if (remaining_size < -1):
-					assert (1==0)
+				assert (remaining_size > -1)
 
 			if remaining_size <= EPSILON:
 				self.TOTAL_FCT += (self.CURRENT_TIME - flow.start)
